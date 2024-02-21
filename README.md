@@ -1,6 +1,6 @@
 # Dusk Prettier configuration
 
-Prettier config used by [Dusk](https://dusk.network/) JavaScript apps.
+Prettier configs used by [Dusk](https://dusk.network/) JavaScript apps.
 
 ## Installation
 
@@ -10,11 +10,14 @@ npm i -D @dusk-network/prettier-config
 
 ## Usage
 
-Edit `package.json`
+You need to use a `.prettierrc.js` file to import one or more of the configurations.
 
-```json
-{
-  // ...
-  "prettier": "@azz/prettier-config"
-}
+```js
+import duskJsPrettierConfig from "@dusk-network/prettier-config/js";
+import duskSveltePrettierConfig from "@dusk-network/prettier-config/svelte"; // For Svelte projects only
+
+export default {
+  ...duskJsPrettierConfig,
+  ...duskSveltePrettierConfig, // For Svelte projects only
+};
 ```
