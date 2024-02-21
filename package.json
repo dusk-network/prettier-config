@@ -1,0 +1,36 @@
+{
+	"author": {
+		"name": "Dusk Network B.V.",
+		"url": "https://dusk.network/",
+		"mail": "info@dusk.network"
+	},
+	"bugs": "https://github.com/dusk-network/prettier-config/issues/",
+	"contributors": [
+		"Kieran Hall <kieran@dusk.network>"
+	],
+	"description": "Prettier config used by Dusk JavaScript apps",
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"main": "index.json",
+	"homepage": "https://github.com/dusk-network/prettier-config/",
+	"keywords": [
+		"dusk",
+		"dusk network",
+		"prettier",
+		"prettierconfig"
+	],
+	"license": "MPL-2.0",
+	"name": "@dusk-network/prettier-config",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dusk-network/prettier-config.git"
+	},
+	"scripts": {
+		"bump": "bump package.json package-lock.json"
+	},
+	"version": "1.0.0",
+    "devDependencies": {
+		"@jsdevtools/version-bump-prompt": "6.1.0"
+	}
+}
