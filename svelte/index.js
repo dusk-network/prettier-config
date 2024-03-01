@@ -1,4 +1,7 @@
 /** @type {import("prettier").Config} */
-const config = {};
+const config = {
+  overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
+  plugins: ["prettier-plugin-svelte"],
+};
 
 export default config;
